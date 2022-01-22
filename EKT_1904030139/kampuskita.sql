@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 22 Jan 2022 pada 13.22
+-- Waktu pembuatan: 22 Jan 2022 pada 15.24
 -- Versi server: 10.4.14-MariaDB
 -- Versi PHP: 7.4.11
 
@@ -43,8 +43,7 @@ CREATE TABLE `calon_mhs` (
 
 INSERT INTO `calon_mhs` (`id`, `nama`, `alamat`, `jenis_kelamin`, `agama`, `sekolah_asal`, `foto_maba`) VALUES
 (1, 'dimas nur pras', 'griya karawaci blok c2 no 4', 'pria', 'islam', 'SMK YUPPENTEK 2', 'm1.png'),
-(17, 'abroy', 'babakan', 'pria', 'islam', 'yuppentek 2', 'm1.png'),
-(18, 'nisa julianti', 'padat karya', 'perempuan', 'islam', 'al-husna', 'm2.png');
+(18, 'nisa julianti', 'padat karya', 'perempuan', 'islam', 'SMK al-husna', 'm2.png');
 
 -- --------------------------------------------------------
 
@@ -71,12 +70,13 @@ CREATE TABLE `dosen_unis` (
 --
 
 INSERT INTO `dosen_unis` (`id`, `nidn`, `nama`, `email`, `jenis_kelamin`, `alamat`, `agama`, `pend1`, `pend2`, `pend3`, `foto_dosen`) VALUES
-(1, '00001111', 'waqidotul qoriyah', 'Qori@gmail.com', 'perempuan', 'cipondoh,jakarta selatan', 'islam', 'S.Kom', 'M.Si', 'Prof', 'd2.png'),
-(3, '12345678', 'khin khin', 'pakrik@gmail.com', 'laki laki', 'Citra tangerang', 'muslim', 'sarjana', 'magister', 'prof', 'd1.png'),
-(4, '1904030103', 'jamal', 'jamal@gmail.com', 'laki laki', 'cilandak', 'islam', 's1', 's2', 's3', 'd1.png'),
-(5, '12345', 'asdfha', 'as@gmail.com', 'perempuan', 'cijengir', 'islam', 'sd', 'smp', 'smk', 'd2.png'),
-(6, '1904030101', 'Yanto', 'yanto@gmail.com', 'pria', 'cijengir', 'islam', 'S1', 'S2', 'S3', 'd1.png'),
-(7, '1904030102', 'Ahmad jamal', 'ahjal@gmail.com', 'laki laki', 'ciputat', 'islam', 's1', 's2', 's3', 'd1.png');
+(8, 'FTTI5029', 'AHMAD SYAUKI ', 'ahmadsyauki@unis.ac.id', 'laki laki', 'CIPONDOH, TANGERANG', 'islam', 'S.Kom', 'M.Kom', '-', 'd1.png'),
+(9, 'FTTI5023', 'IMAM HALIM MURSYIDIN', 'imamhalimmursyidin@unis.ac.id', 'laki laki', 'CIPUTAT, TANGERANG', 'islam', 'S.kom', 'M.Kom', '-', 'd1.png'),
+(10, 'FTTI5024', 'ARIS SOPYAN RIPANDI ', 'aridspoyanripandi@unis.ac.id', 'laki laki', 'KOSAMBI, TANGERANG', 'islam', 'S.Kom', 'M.Kom', '-', 'd1.png'),
+(11, 'FTTI5025', 'ASEP HARDIYANTO NUGROHO', 'asephardiyantonugroho@unis.ac.id', 'laki laki', 'KARAWACI, TANGERANG', 'islam', 'S.kom', 'M.Kom', '-', 'd1.png'),
+(12, 'FTTI5026', 'NIA KOMALASARI', 'niakomalasari@unis.ac.id', 'perempuan', 'TELUK NAGA, TANGERANG', 'islam', 'S.Si', 'M.Kom', '-', 'd2.png'),
+(13, 'FTTI5027', 'TAUFIK HIDAYAT ', 'taufikhidayat@unis.ac.id', 'laki laki', 'PANONGAN, TANGERANG', 'islam', 'S.Kom', 'M.Kom', '-', 'd1.png'),
+(14, 'FTTI5028', 'SITI MURYANAH', 'sitimuryanah@unis.ac.id', 'perempuan', 'CIMONE, TANGERANG', 'islam', 'S.Kom', 'M.Kom', '-', 'd2.png');
 
 --
 -- Indexes for dumped tables
@@ -108,7 +108,7 @@ ALTER TABLE `calon_mhs`
 -- AUTO_INCREMENT untuk tabel `dosen_unis`
 --
 ALTER TABLE `dosen_unis`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

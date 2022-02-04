@@ -85,8 +85,6 @@ $camaba = query("SELECT * FROM calon_mhs WHERE id=$id");
           <a href="hapus.php?id=<?= $camaba['id']; ?>" onclick="return confirm('apakah anda ingin menghapus data ini?');" class="btn btn-danger" role="button">HAPUS</a> |
           <a href="index.php" class="btn btn-primary" role="button">KEMBALI</a>
         </li>
-
-
       </ul>
 
     </div>

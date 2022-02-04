@@ -13,9 +13,6 @@ if (isset($_POST['tambah'])) {
     </script>";
   }
 }
-
-
-
 ?>
 <!doctype html>
 <html lang="en">
